@@ -87,7 +87,7 @@ int eGen_buscarPorId(eGenerica listado[] ,int limite, int id)
 
 
 
-int eGen_mostrarUno(eGenerica parametro)
+void eGen_mostrarUno(eGenerica parametro)
 {
      printf("\n %s - %d - %d",parametro.nombre,parametro.idGenerica,parametro.estado);
 
@@ -159,6 +159,34 @@ int eGen_alta(eGenerica  listado[],int limite)
                 listado[indice].estado = OCUPADO;
             //}
         }
+    }
+    return retorno;
+}
+
+int eGen_baja(eGenerica listado[],int limite, int id){
+    int retorno = 0;
+
+    for(int i = 0; i < limite; i++){
+        if(listado[i].idGenerica == id){
+            listado[i].estado = LIBRE;
+           retorno = 1;
+        }
+    }
+    return retorno;
+}
+
+
+int eGen_modificacion(eGenerica listado[] ,int limite, int id){
+    int retorno = 0;
+
+    for( int i = 0; i < limite; i++){
+        if(listado[i].idGenerica == id){
+            // modifico campo
+            printf("Ingrese nuevo nombre :");
+            gets(listado[i].nombre);
+            retorno = 1;
+        }
+        break;
     }
     return retorno;
 }

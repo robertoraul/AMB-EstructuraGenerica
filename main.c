@@ -3,6 +3,14 @@
 #include "EstructuraGenerica.h"
 //#include "susFunciones.h"
 #define CANTIDAD 10
+
+/*
+
+genericas con ABM
+menu, alta baja modificacion.
+
+*/
+
 int main()
 {
     eGenerica listadoGenerico[CANTIDAD];
@@ -25,7 +33,6 @@ int main()
     printf( "\n \t muestro el array con los borrados y vacios");
     eGen_mostrarListadoConBorrados(listadoGenerico,CANTIDAD);
     getchar();
-
 
     return 0;
 }

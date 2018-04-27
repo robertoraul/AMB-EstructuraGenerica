@@ -12,3 +12,16 @@
 	<stdlib.h>
 	"EstructuraGenerica.h"
 
+1524863197 source:c:\test\rrc\amb-estructuragenerica\estructuragenerica.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"EstructuraGenerica.h"
+
+1524865153 c:\test\rrc\amb-estructuragenerica\estructuragenerica.h
+
+1524866177 source:c:\test\rrc\amb-estructuragenerica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"EstructuraGenerica.h"
+
